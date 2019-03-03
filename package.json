@@ -1,0 +1,9 @@
+{
+  "name": "Cat Energy",
+  "version": "0.1.0",
+  "browserslist": [
+    "last 2 versions",
+    "IE 11",
+    "Firefox ESR"
+  ]
+}

@@ -1,6 +1,11 @@
 {
   "name": "Cat Energy",
   "version": "0.1.0",
+  "scripts": {
+    "build": "gulp build",
+    "images": "gulp images",
+    "start": "npm run build && gulp serve"
+  },
   "browserslist": [
     "last 2 versions",
     "IE 11",

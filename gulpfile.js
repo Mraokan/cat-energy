@@ -12,7 +12,7 @@ var del = require("del");
 var server = require("browser-sync").create();
 var run = require("run-sequence");
 
-gulp.task("style", function() {
+gulp.task("style", function(done) {
   gulp.src("source/sass/style.scss")
     .pipe(plumber())
     .pipe(sass())
@@ -24,9 +24,10 @@ gulp.task("style", function() {
     .pipe(rename("style.min.css"))
     .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
+    done();
 });
 
-gulp.task("images", function () {
+gulp.task("images", function (done) {
 	return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
       imagemin.optipng({optimizationLevel: 3}),
@@ -34,9 +35,10 @@ gulp.task("images", function () {
       imagemin.svgo()
     ]))
     .pipe(gulp.dest("source/img"));
+    done();
 });
 
-gulp.task("copy", function () {
+gulp.task("copy", function (done) {
   return gulp.src([
     "source/*.html",
     "source/img/**",
@@ -45,13 +47,15 @@ gulp.task("copy", function () {
     base: "source"
   })
   .pipe(gulp.dest("build"));
+  done();
 });
 
-gulp.task("clean", function () {
-  return del("build");
+gulp.task("clean", function (done) {
+  return del("build/");
+  done();
 });
 
-gulp.task("serve", function() {
+gulp.task("serve", function(done) {
   server.init({
     server: "build/",
     notify: false,
@@ -60,15 +64,9 @@ gulp.task("serve", function() {
     ui: false
   });
 
-  gulp.watch("source/sass/**/*.{scss,sass}", ["style"]);
+  gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("style"));
   gulp.watch("source/*.html").on("change", server.reload);
+  done();
 });
 
-gulp.task("build", function (done) {
-  run(
-    "clean",
-    "copy",
-    "style",
-    done
-  );
-});
+gulp.task("build", gulp.series("clean", "copy", "style"));

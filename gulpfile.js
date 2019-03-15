@@ -40,10 +40,10 @@ gulp.task("images", function (done) {
 
 gulp.task("copy", function (done) {
   return gulp.src([
+    "source/fonts/**",
     "source/*.html",
     "source/img/**",
-    "source/js/**",
-    "source/fonts/**"
+    "source/js/**"
   ], {
     base: "source"
   })

@@ -1,0 +1,46 @@
+.navigation {
+  flex-direction: column;
+
+  @media (min-width: $tablet) {
+    flex-direction: row;
+  }
+}
+
+.navigation__link {
+  height: 66px;
+  padding-top: 19px;
+
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-align: center;
+
+  border-bottom: 1px solid #e6e6e6;
+
+  &:focus,
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $tablet) {
+    height: 35px;
+    margin-left: 35px;
+    padding-top: 0;
+
+    font-size: 18px;
+    color: #222222;
+    font-weight: 400;
+
+    border-bottom: none;
+  }
+}
+
+.navigation__link--active {
+  border-bottom: 2px solid $green;
+}

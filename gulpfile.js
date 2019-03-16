@@ -81,4 +81,4 @@ gulp.task("serve", function(done) {
   done();
 });
 
-gulp.task("build", gulp.series("clean", "copy", "style"));
+gulp.task("build", gulp.series("copy", "style"));

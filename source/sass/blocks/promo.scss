@@ -1,0 +1,126 @@
+.promo {
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 27px;
+
+  @media (min-width: $tablet) {
+    width: 768px;
+    padding-top: 59px;
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 1300px;
+    margin: 0 auto;
+    padding-top: 100px;
+    padding-right: 690px;
+  }
+}
+
+.promo__background {
+  position: absolute;
+  top: 0;
+
+  width: 320px;
+  height: 305px;
+
+  background-image: url("../img/index-background-mobile@1x.jpg");
+
+  z-index: -1;
+
+  @media (min-width: $tablet) {
+    display: none;
+  }
+
+  @media (min-width: $desktop) {
+    top: -85px;
+    left: 650px;
+
+    display: block;
+    width: 720px;
+    height: 696px;
+
+    background-image: url("../img/index-background-desktop@1x.jpg");
+  }
+}
+
+.promo__title {
+  margin: 0;
+  margin-bottom: 25px;
+
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 400;
+  color: white;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 40px;
+
+    color: black;
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+}
+
+.promo__slogan {
+  margin: 0;
+  margin-bottom: 29px;
+
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+
+  @media (min-width: $tablet) {
+    margin-bottom: 49px;
+
+    color: black;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+  }
+}
+
+.promo__img {
+  margin-bottom: 3px;
+  margin-left: 20px;
+
+  @media (min-width: $tablet) {
+    position: absolute;
+    top: 265px;
+    left: 0;
+
+    margin: 0;
+
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop) {
+    top: 35px;
+    left: 490px;
+  }
+}
+
+.promo__button {
+  margin-left: 20px;
+  width: 280px;
+
+  @media (min-width: $tablet) {
+    width: 245px;
+    height: 52px;
+    margin-left: 0;
+    margin-bottom: 530px;
+    padding-top: 15px;
+
+    font-size: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 268px;
+  }
+}

@@ -31,3 +31,43 @@ body {
 *, *::before, *::after {
   box-sizing: inherit;
 }
+
+.button {
+  display: inline-block;
+  height: 40px;
+  padding-top: 9px;
+
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  vertical-align: middle;
+  text-align: center;
+
+  background-color: $green;
+
+  &:hover,
+  &:focus {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5eaa2f;
+  }
+}
+
+.button--grey {
+  color: #444444;
+  background-color: $bg-grey;
+
+  &:hover,
+  &:focus {
+    background-color: $bg-greyer;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
+}

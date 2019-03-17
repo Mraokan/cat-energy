@@ -23,18 +23,23 @@
     </button>
 
     <nav class="header__navigation navigation">
-      <a class="navigation__link navigation__link--active" href="#">Главная</a>
-      <a class="navigation__link" href="catalog.html">Каталог продукции</a>
-      <a class="navigation__link" href="form.html">Подбор программы</a>
+      <a class="navigation__link navigation__link--white navigation__link--active" href="#">Главная</a>
+      <a class="navigation__link navigation__link--white" href="catalog.html">Каталог продукции</a>
+      <a class="navigation__link navigation__link--white" href="form.html">Подбор программы</a>
     </nav>
   </header>
 
   <main class="main">
     <section class="promo">
+      <div class="promo__background"></div>
       <h2 class="promo__title">Функциональное питание для котов</h2>
       <p class="promo__slogan">Занялся собой? Займись котом!</p>
-      <img class="promo__img" src="#" alt="Cat Energy Pro с курицей">
-      <a class="promo__button button" href="#">Подобрать программу</a>
+      <picture>
+        <source media="(min-width: 1300px)" srcset="img/index-can-desktop@1x.png">
+        <source media="(min-width: 768px)" srcset="img/index-can-tablet@1x.jpg">
+        <img class="promo__img" src="img/index-can-mobile@1x.png" alt="Cat Energy Pro с курицей">
+      </picture>
+      <a class="promo__button button" href="form.html">Подобрать программу</a>
     </section>
 
     <section class="categories">

@@ -6,5 +6,6 @@
 *.sublime*
 node_modules/
 backup/
+build/
 npm-debug.*
 Thumbs.db

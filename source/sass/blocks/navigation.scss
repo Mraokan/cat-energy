@@ -48,9 +48,13 @@
 }
 
 .navigation__link--white {
-  color: white;
+  @media (min-width: $desktop) {
+    color: white;
+  }
 }
 
 .navigation__link--white.navigation__link--active {
-  border-color: white;
+  @media (min-width: $desktop) {
+    border-color: white;
+  }
 }

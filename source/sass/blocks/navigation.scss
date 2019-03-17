@@ -42,5 +42,7 @@
 }
 
 .navigation__link--active {
-  border-bottom: 2px solid $green;
+  @media (min-width: $tablet) {
+    border-bottom: 2px solid $green;
+  }
 }

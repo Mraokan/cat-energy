@@ -2,24 +2,30 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
   <title>Cat Energy</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body class="body">
-  
+
   <header class="header">
-    <a class="header__logo">
-      <img class="header__logo-img" src="#"  alt="logo">
-      <img class="header__logo-text" src="#" alt="Cat Energy">
+    <a class="header__logo" href="index.html">
+      <picture>
+        <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+        <img class="header__logo-img" src="img/logo-mobile.svg" width="202" alt="Cat Energy">
+      </picture>
     </a>
 
     <button class="header__toggle">
       <span class="visually-hidden">Открыть/Закрыть</span>
+      <span class="header__toggle-bar"></span>
     </button>
 
     <nav class="header__navigation navigation">
-      <a class="navigation__link" href="#">Главная</a>
-      <a class="navigation__link" href="#">Каталог продукции</a>
-      <a class="navigation__link" href="#">Подбор программы</a>
+      <a class="navigation__link navigation__link--active" href="#">Главная</a>
+      <a class="navigation__link" href="catalog.html">Каталог продукции</a>
+      <a class="navigation__link" href="form.html">Подбор программы</a>
     </nav>
   </header>
 

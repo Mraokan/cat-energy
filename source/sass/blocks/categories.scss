@@ -24,6 +24,7 @@
 
   @media (min-width: $desktop) {
     display: flex;
+    justify-content: space-between;
   }
 }
 
@@ -44,6 +45,7 @@
   }
 
   @media (min-width: $desktop) {
+    width: 570px;
     padding-top: 74px;
     padding-right: 55px;
   }

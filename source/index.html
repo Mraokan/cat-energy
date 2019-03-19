@@ -79,6 +79,7 @@
     </section>
 
     <section class="example">
+      <div class="example__background"></div>
       <h2 class="example__title">Живой пример</h2>
       <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день. </p>
       <table class="example__table">
@@ -88,7 +89,7 @@
         </tr>
         <tr>
           <td class="example__table-item example__table-item--bottom">снижение веса</td>
-          <td class="example__table-item example__table-item--bottomp">затрачено времени</td>
+          <td class="example__table-item example__table-item--bottom">затрачено времени</td>
         </tr>
       </table>
 
@@ -100,15 +101,24 @@
       <div class="example__slider slider">
         <ul class="slider__list">
           <li>
-            <img class="slider__img" src="#" alt="Было">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="../img/before-desktop@1x.png">
+              <source media="(min-width: 768px)" srcset="../img/before-tablet@1x.png">
+              <img class="slider__img slider__img--before" src="../img/before-mobile@1x.png" alt="Было">
+            </picture>
           </li>
           <li>
-            <img class="slider__img" src="#" alt="Стало">
+            <picture>
+              <source media="(min-width: 1300px)" srcset="../img/after-desktop@1x.png">
+              <source media="(min-width: 768px)" srcset="../img/after-tablet@1x.png">
+              <img class="slider__img slider__img--after" src="../img/after-mobile@1x.png" alt="Стало">
+            </picture>
           </li>
         </ul>
 
         <div class="slider__controls">
           <button class="slider__button" type="button">Было</button>
+          <div class="slider__controls-bar"></div>
           <div class="slider__controls-indicator"></div>
           <button class="slider__button" type="button">Стало</button>
         </div>

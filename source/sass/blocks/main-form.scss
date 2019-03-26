@@ -1,0 +1,58 @@
+.main--form {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 15px;
+
+  @media (min-width: $tablet) {
+    width: $tablet;
+    padding-top: 58px;
+  }
+
+  @media (min-width: $desktop) {
+    width: $desktop;
+    padding-top: 68px;
+  }
+}
+
+.main--form__title {
+  margin: 0;
+  margin-left: 20px;
+  margin-bottom: 25px;
+
+  font-size: 36px;
+  line-height: 60px;
+  font-weight: 400;
+
+  @media (min-width: $tablet) {
+    margin-left: 30px;
+    margin-bottom: 56px;
+
+    font-size: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 40px;
+  }
+}
+
+.main--form__info {
+  margin: 0;
+  margin-left: 20px;
+  margin-bottom: 39px;
+
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet) {
+    margin-left: 70px;
+    margin-bottom: 66px;
+
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-left: 40px;
+  }
+}

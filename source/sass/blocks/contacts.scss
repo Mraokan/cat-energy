@@ -71,6 +71,12 @@
   }
 }
 
+.contacts__card--grey {
+  @media (max-width: 1299px) {
+    background-color: $bg-grey;
+  }
+}
+
 .contacts__slogan {
   display: inline-block;
   width: 136px;

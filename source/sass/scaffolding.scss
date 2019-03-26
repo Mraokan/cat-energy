@@ -35,8 +35,8 @@ body {
 .button {
   display: inline-block;
   height: 40px;
-  padding-top: 9px;
 
+  font-family: inherit;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -46,6 +46,9 @@ body {
   text-align: center;
 
   background-color: $green;
+  border: none;
+
+  cursor: pointer;
 
   &:hover,
   &:focus {
@@ -56,6 +59,10 @@ body {
     color: rgba(255, 255, 255, 0.3);
     background-color: #5eaa2f;
   }
+}
+
+.button--link {
+  padding-top: 9px;
 }
 
 .button--grey {

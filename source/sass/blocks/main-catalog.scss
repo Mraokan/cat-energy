@@ -1,6 +1,10 @@
 .main-catalog {
   width: 320px;
   margin: 0 auto;
+
+  @media (min-width: $tablet) {
+    width: $tablet;
+  }
 }
 
 .main-catalog__title {
@@ -11,4 +15,12 @@
   font-size: 36px;
   line-height: 60px;
   font-weight: 400;
+
+  @media (min-width: $tablet) {
+    margin-top: 60px;
+    margin-left: 30px;
+    margin-bottom: 165px;
+
+    font-size: 60px;
+  }
 }

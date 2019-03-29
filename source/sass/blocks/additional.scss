@@ -29,6 +29,16 @@
     font-size: 36px;
     line-height: 36px;
   }
+
+  @media (min-width: $desktop) {
+    margin-left: 0;
+  }
+}
+
+.additional__wrapper {
+  @media (min-width: $desktop) {
+    display: flex;
+  }
 }
 
 .additional__list {
@@ -47,6 +57,13 @@
     margin-right: 30px;
     margin-bottom: 70px;
   }
+
+  @media (min-width: $desktop) {
+    width: 895px;
+    margin-left: 40px;
+    margin-right: 80px;
+    margin-bottom: 87px;
+  }
 }
 
 .additional__item {
@@ -61,6 +78,11 @@
     justify-content: space-between;
     align-items: flex-end;
     padding-top: 26px;
+  }
+
+  @media (min-width: $desktop) {
+    justify-content: flex-start;
+    padding-top: 14px;
   }
 }
 
@@ -93,16 +115,32 @@
   color: #444444;
 
   @media (min-width: $tablet) {
-    margin-bottom: 21px;
+    margin-bottom: 22px;
 
     font-size: 16px;
     line-height: 20px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-right: 40px;
+    margin-left: auto;
+  }
+}
+
+.additional__item-amount {
+  @media (min-width: $desktop) {
+    width: 245px;
   }
 }
 
 .additional__item-price {
   @media (min-width: $tablet) {
     margin-left: 53px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 45px;
+    margin-left: 0;
   }
 }
 
@@ -112,6 +150,11 @@
 
   @media (min-width: $tablet) {
     margin-bottom: 27px;
+  }
+
+  @media (min-width: $desktop) {
+    width: 245px;
+    margin-bottom: 16px;
   }
 }
 
@@ -125,7 +168,7 @@
 
   background-image: url(../img/gift-photo-mobile@1x.jpg);
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet) and (max-width: 1299px) {
     display: flex;
     margin-left: 30px;
     margin-right: 30px;
@@ -134,6 +177,14 @@
     padding-left: 91px;
 
     background-image: url(../img/gift-photo-tablet@1x.jpg);
+  }
+
+  @media (min-width: $desktop) {
+    width: 245px;
+    margin: 0;
+    margin-bottom: 87px;
+
+    background-image: url(../img/gift-photo-desktop@1x.jpg);
   }
 }
 
@@ -144,7 +195,7 @@
 
   fill: white;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet) and (max-width: 1299px) {
     margin: 0;
     margin-bottom: 75px;
     margin-right: 277px;
@@ -162,7 +213,7 @@
   color: white;
   text-align: center;
 
-  @media (min-width: $tablet) {
+  @media (min-width: $tablet) and (max-width: 1299px) {
     margin: 0;
     margin-top: 7px;
 

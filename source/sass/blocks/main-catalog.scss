@@ -5,6 +5,10 @@
   @media (min-width: $tablet) {
     width: $tablet;
   }
+
+  @media (min-width: $desktop) {
+    width: $desktop;
+  }
 }
 
 .main-catalog__title {
@@ -22,5 +26,10 @@
     margin-bottom: 165px;
 
     font-size: 60px;
+  }
+
+  @media (min-width: $desktop) {
+    margin-top: 71px;
+    margin-left: 40px;
   }
 }

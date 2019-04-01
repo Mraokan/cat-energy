@@ -39,6 +39,11 @@
 
     border-bottom: none;
   }
+
+  @media (min-width: $desktop) {
+    font-size: 20px;
+    line-height: 25px;
+  }
 }
 
 .navigation__link--active {

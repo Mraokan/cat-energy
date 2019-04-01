@@ -18,7 +18,7 @@
 .footer__logo {
   width: 280px;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 35px;
   padding-bottom: 25px;
 
   border-bottom: 1px solid #d9d9d9;
@@ -26,7 +26,7 @@
   @media (min-width: $tablet) {
     width: 128px;
     margin: 0;
-    margin-top: 64px;
+    margin-top: 62px;
     margin-left: 30px;
     margin-bottom: 57px;
     padding-bottom: 0;
@@ -35,6 +35,7 @@
   }
 
   @media (min-width: $desktop) {
+    margin-top: 48px;
     margin-left: 40px;
   }
 }
@@ -58,11 +59,12 @@
   @media (min-width: $tablet) {
     margin: 0;
     padding: 0;
-    margin-top: 60px;
+    margin-top: 58px;
     margin-left: 155px;
   }
 
   @media (min-width: $desktop) {
+    margin-top: 43px;
     margin-left: 412px;
   }
 }
@@ -82,13 +84,14 @@
   text-decoration: none;
 
   @media (min-width: $tablet) {
-    margin-top: 59px;
+    margin-top: 57px;
     margin-left: 134px;
     padding: 0;
   }
 
   @media (min-width: $desktop) {
-    margin-left: 389px;
+    margin-top: 44px;
+    margin-left: 390px;
   }
 }
 

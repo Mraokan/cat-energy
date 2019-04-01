@@ -32,21 +32,21 @@
   position: relative;
 
   margin-bottom: 20px;
-  padding-top: 30px;
+  padding-top: 29px;
   padding-left: 20px;
   padding-right: 20px;
   background-color: $bg-grey;
 
   @media (min-width: $tablet) {
     margin-bottom: 30px;
-    padding-top: 80px;
+    padding-top: 75px;
     padding-left: 53px;
     padding-right: 283px;
   }
 
   @media (min-width: $desktop) {
     width: 570px;
-    padding-top: 74px;
+    padding-top: 76px;
     padding-right: 55px;
   }
 }
@@ -121,8 +121,8 @@
   background-image: url("../img/icon-cat-pro.svg");
 
   @media (min-width: $tablet) {
-    top: 44px;
-    left: -36px;
+    top: 42px;
+    left: -34px;
 
     width: 268px;
     height: 112px;
@@ -140,7 +140,7 @@
 .categories__title {
   margin: 0;
   margin-bottom: 30px;
-  padding-left: 73px;
+  padding-left: 71px;
 
   font-size: 24px;
   line-height: 37px;
@@ -156,8 +156,8 @@
   }
 
   @media (min-width: $desktop) {
-    margin-bottom: 73px;
-    padding-left: 163px;
+    margin-bottom: 75px;
+    padding-left: 162px;
   }
 }
 
@@ -184,6 +184,12 @@
 
   @media (min-width: $desktop) {
     margin-bottom: 9px;
+  }
+}
+
+.categories__text--pro {
+  @media (min-width: $tablet) and (max-width: 1299px) {
+    width: 340px;
   }
 }
 

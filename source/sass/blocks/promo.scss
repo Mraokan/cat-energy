@@ -14,7 +14,8 @@
   @media (min-width: $desktop) {
     width: 1300px;
     margin: 0 auto;
-    padding-top: 100px;
+    padding-top: 109px;
+    padding-left: 123px;
     padding-right: 690px;
   }
 }
@@ -35,7 +36,7 @@
   }
 
   @media (min-width: $desktop) {
-    top: -85px;
+    top: -113px;
     left: 650px;
 
     display: block;
@@ -58,6 +59,7 @@
 
   @media (min-width: $tablet) {
     margin-bottom: 40px;
+    margin-left: -3px;
 
     color: black;
     font-size: 60px;
@@ -68,6 +70,7 @@
 
 .promo__slogan {
   margin: 0;
+  margin-left: -1px;
   margin-bottom: 29px;
 
   font-size: 14px;
@@ -84,16 +87,19 @@
     line-height: 20px;
     text-align: left;
   }
+
+  @media (min-width: $desktop) {
+    margin-bottom: 56px;
+  }
 }
 
 .promo__img {
-  margin-bottom: 3px;
   margin-left: 20px;
 
   @media (min-width: $tablet) {
     position: absolute;
-    top: 265px;
-    left: 0;
+    top: 260px;
+    left: 30px;
 
     margin: 0;
 
@@ -101,27 +107,32 @@
   }
 
   @media (min-width: $desktop) {
-    top: 35px;
+    top: 30px;
     left: 490px;
   }
 }
 
 .promo__button {
+  margin-top: -2px;
   margin-left: 20px;
   margin-bottom: 23px;
   width: 280px;
+
+  font-size: 14px;
+  line-height: 18px;
 
   @media (min-width: $tablet) {
     width: 245px;
     height: 52px;
     margin-left: 0;
     margin-bottom: 530px;
-    padding-top: 15px;
+    padding-top: 17px;
 
     font-size: 20px;
   }
 
   @media (min-width: $desktop) {
+    margin-left: -2px;
     margin-bottom: 268px;
   }
 }

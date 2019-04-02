@@ -98,6 +98,10 @@
   }
 }
 
+.header__toggle--opened {
+  left: 0;
+}
+
 .header__toggle-bar {
   position: relative;
 
@@ -126,7 +130,7 @@
   }
 }
 
-.header__toggle-bar--close {
+.header__toggle--opened .header__toggle-bar {
   background-color: transparent;
 
   &::before {

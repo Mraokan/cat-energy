@@ -105,9 +105,11 @@
 }
 
 .catalog__item-img {
-  position: absolute;
-  left: 0;
-  bottom: 305px;
+  @media (min-width: $tablet) {
+    position: absolute;
+    left: 0;
+    bottom: 305px;
+  }
 }
 
 .catalog__item-link {
@@ -115,7 +117,6 @@
 }
 
 .catalog__item-link--more {
-  height: 60px;
   margin: 0 auto;
 }
 
@@ -144,7 +145,7 @@
 .catalog__item-title--more {
   width: auto;
   margin: 0;
-  margin-top: 84px;
+  margin-top: 80px;
   margin-bottom: 8px;
 
   @media (min-width: $tablet) {

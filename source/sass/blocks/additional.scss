@@ -67,8 +67,7 @@
 }
 
 .additional__item {
-  margin-left: 2px;
-  padding-top: 14px;
+  padding-top: 13px;
 
   border-bottom: 1px solid #e6e6e6;
 
@@ -88,7 +87,7 @@
 
 .additional__item-title {
   margin: 0;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
 
   font-size: 16px;
   line-height: 16px;
@@ -139,7 +138,7 @@
   }
 
   @media (min-width: $desktop) {
-    width: 45px;
+    width: 50px;
     margin-left: 0;
   }
 }

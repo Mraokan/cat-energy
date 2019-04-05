@@ -9,7 +9,7 @@
   position: relative;
 
   display: flex;
-  height: 230px;
+  height: 232px;
   margin: 0;
   margin-bottom: 40px;
   padding: 0;
@@ -17,7 +17,7 @@
   list-style: none;
 
   @media (min-width: $tablet) {
-    height: 325px;
+    height: 323px;
   }
 
   @media (min-width: $desktop) {
